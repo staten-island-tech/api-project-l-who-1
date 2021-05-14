@@ -7,12 +7,9 @@ const key = "YOURKEYHERE";
 const query = async function () {
   try {
     const response = await fetch(
-      "https://botw-compendium.herokuapp.com/api/v2"
+      "https://botw-compendium.herokuapp.com/api/v2/entry/Master Kohga"
     );
     const data = await response.json();
-    data.results.forEach((movie) => {
-      DOMSelectors.grid.insertAdjacentHTML("beforeend", "");
-    });
     console.log(data);
   } catch (error) {
     console.log(error);
