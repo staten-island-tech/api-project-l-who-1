@@ -7,7 +7,18 @@ const query = async function () {
       `https://botw-compendium.herokuapp.com/api/v2`
     );
     const data = await response.json();
-    data.results.forEach((element) => {
+    data.response.forEach((element) => {
+      let categoryArr = [];
+      const addCategory = function () {
+        botw.forEach((element) => {
+          if (element.names.includes(element.name)) {
+            categoryArr.push(element.name);
+            return categoryArr;
+          }
+        });
+      };
+      addCategory();
+      console.log(genereArr);
       DOMSelectors.grid.insertAdjacentHTML(
         "beforeend",
         `<div class="element-card">
@@ -31,7 +42,7 @@ const query = async function () {
           </div>
 
           <div class="categories">
-            <li class="category">${element.category}</li>
+            ${categoryArr}
           </div>
         </div>
       </div>`
