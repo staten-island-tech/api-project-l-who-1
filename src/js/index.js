@@ -1,9 +1,6 @@
 import { DOMSelectors } from "./DOM";
-import { genres } from "./genre";
+import { botw } from "./botw";
 
-const key = "YOURKEYHERE";
-//
-//
 const query = async function () {
   try {
     const response = await fetch(
