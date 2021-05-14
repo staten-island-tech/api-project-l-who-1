@@ -4,11 +4,38 @@ import { botw } from "./botw";
 const query = async function () {
   try {
     const response = await fetch(
-      "https://botw-compendium.herokuapp.com/api/v2"
+      `https://botw-compendium.herokuapp.com/api/v2`
     );
     const data = await response.json();
-    data.results.forEach((movie) => {
-      DOMSelectors.grid.insertAdjacentHTML("beforeend", "");
+    data.results.forEach((element) => {
+      DOMSelectors.grid.insertAdjacentHTML(
+        "beforeend",
+        `<div class="element-card">
+        <div class="element-card-front">
+          <img
+            src="${element.image}"
+            alt=""
+            class="poster"
+          />
+        </div>
+        <div class="element-card-back">
+          <h3 class="element-card-header">Horse</h3>
+          <div class="location-box">
+            <p class="common-locations">Common Locations</p>
+            <p class="common-locations">${element.common_locations}</p>
+          </div>
+
+          <div class="drops-box">
+            <p class="item-drops">Item Drops</p>
+            <p class="item-drops">${element.drops}</p>
+          </div>
+
+          <div class="categories">
+            <li class="category">${element.category}</li>
+          </div>
+        </div>
+      </div>`
+      );
     });
     console.log(data);
   } catch (error) {
