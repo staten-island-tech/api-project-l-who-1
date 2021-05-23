@@ -21,28 +21,28 @@ const query = async function () {
       console.log(genereArr);
       DOMSelectors.grid.insertAdjacentHTML(
         "beforeend",
-        `<div class="element-card">
+        `</div><div class="element-card">
         <div class="element-card-front">
           <img
-            src="${element.image}"
+            src="https://botw-compendium.herokuapp.com/api/v2/entry/${element.image}/image"
             alt=""
-            class="poster"
+            class="image"
           />
         </div>
         <div class="element-card-back">
           <h3 class="element-card-header">Horse</h3>
           <div class="location-box">
-            <p class="common-locations">Common Locations</p>
+          <p class="common-locations">Common Locations</p>
             <p class="common-locations">${element.common_locations}</p>
           </div>
 
           <div class="drops-box">
-            <p class="item-drops">Item Drops</p>
+          <p class="item-drops">Item Drops</p>
             <p class="item-drops">${element.drops}</p>
           </div>
 
           <div class="categories">
-            ${categoryArr}
+          <li class="category">${categoryArr}</li>
           </div>
         </div>
       </div>`
