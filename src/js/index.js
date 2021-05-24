@@ -63,6 +63,10 @@ const query = async function () {
           <p class="common-locations">Common Locations</p>
             <p class="common-locations">${resData.common_locations}</p>
           </div>
+          <div class="drops-box">
+          <p class="item-drops">Item Drops</p>
+            <p class="item-drops">${resData.drops}</p>
+          </div>
           <div class="attack-box">
           <p class="attack-stat">Attack</p>
             <p class="attack-stat">${resData.attack}</p>
