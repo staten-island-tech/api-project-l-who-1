@@ -12,40 +12,33 @@ const listen = function () {
           `https://botw-compendium.herokuapp.com/api/v2/entry/${searchParams}`
         );
         const resData = await response.json();
-        resData.data.monsters.forEach((element) => {
-          let categoryArr = [];
-          const addCategory = function () {
-            //   botw.forEach((element) => {
-            //     if (element.name.includes(element.name)) {
-            //       categoryArr.push(element.name);
-            //       return categoryArr;
-            //     }
-            //   });
-            categoryArr.push(element.name);
-            return categoryArr;
-          };
-          addCategory();
-          console.log(categoryArr);
-          DOMSelectors.grid.insertAdjacentHTML(
-            "beforeend",
-            `</div><div class="element-card">
+        let categoryArr = [];
+        const addCategory = function () {
+          categoryArr.push(resData.data.name);
+          return categoryArr;
+        };
+        addCategory();
+        console.log(categoryArr);
+        DOMSelectors.grid.insertAdjacentHTML(
+          "beforeend",
+          `</div><div class="element-card">
               <div class="element-card-front">
                 <img
-                  src="https://botw-compendium.herokuapp.com/api/v2/entry/${element.id}/image"
+                  src="https://botw-compendium.herokuapp.com/api/v2/entry/${resData.data.id}/image"
                   alt=""
                   class="image"
                 />
               </div>
               <div class="element-card-back">
-                <h3 class="element-card-header">${element.name}</h3>
+                <h3 class="element-card-header">${resData.data.name}</h3>
                 <div class="location-box">
                 <p class="common-locations">Common Locations</p>
-                  <p class="common-locations">${element.common_locations}</p>
+                  <p class="common-locations">${resData.data.common_locations}</p>
                 </div>
       
                 <div class="drops-box">
                 <p class="item-drops">Item Drops</p>
-                  <p class="item-drops">${element.drops}</p>
+                  <p class="item-drops">${resData.data.drops}</p>
                 </div>
       
                 <div class="categories">
@@ -53,8 +46,7 @@ const listen = function () {
                 </div>
               </div>
             </div>`
-          );
-        });
+        );
         console.log(resData);
       } catch (error) {
         console.log(error);
