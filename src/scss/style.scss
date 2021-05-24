@@ -51,7 +51,6 @@ body {
   height: 100%;
   top: 0;
   left: 0;
-  /* background-image: url("https://image.tmdb.org/t/p/w300/r7vmZjiyZw9rpJMQJdXpjgiCOk9.jpg"); */
   background-position: center;
   z-index: 3;
   transition: all 0.3s;
@@ -84,7 +83,11 @@ body {
   text-align: center;
 }
 .location-box,
-.drops-box {
+.drops-box,
+.attack-box,
+.defense-box,
+.cooking-box,
+.heart-box {
   text-align: center;
 }
 
@@ -100,10 +103,12 @@ body {
 .category {
   list-style: none;
 }
-.common-locations {
-  font-size: 2rem;
-}
-.item-drops {
+.common-locations,
+.item-drops,
+.attack-stat,
+.defense-stat,
+.cooking-effect,
+.hearts-recovered {
   font-size: 2rem;
 }
 
