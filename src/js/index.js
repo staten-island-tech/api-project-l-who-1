@@ -1,5 +1,4 @@
 import { DOMSelectors } from "./DOM";
-import { botw } from "./botw";
 
 const query = async function () {
   try {
@@ -34,6 +33,10 @@ const query = async function () {
           <div class="drops-box">
           <p class="item-drops">Item Drops</p>
             <p class="item-drops">${resData.drops}</p>
+          </div>
+          <div class="description-box">
+          <p class="description">Description</p>
+            <li class="description">${resData.description}</li>
           </div>
         </div>
       </div>`
@@ -71,6 +74,10 @@ const query = async function () {
           <p class="defense-stat">Defense</p>
             <p class="defense-stat">${resData.defense}</p>
           </div>
+          <div class="description-box">
+          <p class="description">Description</p>
+            <li class="description">${resData.description}</li>
+          </div>
         </div>
       </div>`
       );
@@ -106,6 +113,10 @@ const query = async function () {
           <div class="heart-box">
           <p class="hearts-recovered">Hearts Recovered</p>
             <p class="hearts-recovered">${resData.hearts_recovered}</p>
+          </div>
+          <div class="description-box">
+          <p class="description">Description</p>
+            <li class="description">${resData.description}</li>
           </div>
         </div>
       </div>`
@@ -143,6 +154,10 @@ const query = async function () {
           <p class="hearts-recovered">Hearts Recovered</p>
             <p class="hearts-recovered">${resData.hearts_recovered}</p>
           </div>
+          <div class="description-box">
+          <p class="description">Description</p>
+            <li class="description">${resData.description}</li>
+          </div>
         </div>
       </div>`
       );
@@ -175,6 +190,10 @@ const query = async function () {
           <p class="item-drops">Item Drops</p>
             <p class="item-drops">${resData.drops}</p>
           </div>
+          <div class="description-box">
+          <p class="description">Description</p>
+            <li class="description">${resData.description}</li>
+          </div>
         </div>
       </div>`
       );
@@ -206,6 +225,10 @@ const query = async function () {
           <div class="drops-box">
           <p class="item-drops">Item Drops</p>
             <p class="item-drops">${resData.drops}</p>
+          </div>
+          <div class="description-box">
+          <p class="description">Description</p>
+            <li class="description">${resData.description}</li>
           </div>
         </div>
       </div>`
