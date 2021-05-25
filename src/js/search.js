@@ -1,5 +1,4 @@
 import { DOMSelectors } from "./DOM";
-import { botw } from "./botw";
 
 const listen = function () {
   DOMSelectors.searchForm.addEventListener("submit", function (e) {
@@ -35,14 +34,13 @@ const listen = function () {
                 <p class="common-locations">Common Locations</p>
                   <p class="common-locations">${resData.data.common_locations}</p>
                 </div>
-      
                 <div class="drops-box">
                 <p class="item-drops">Item Drops</p>
                   <p class="item-drops">${resData.data.drops}</p>
                 </div>
-      
-                <div class="categories">
-                <li class="category">${categoryArr}</li>
+                <div class="description-box">
+                <p class="description">Description</p>
+                  <li class="description">${resData.description}</li>
                 </div>
               </div>
             </div>`
