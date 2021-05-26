@@ -1,0 +1,155 @@
+$phone: 375px;
+$tablet: 768px;
+$laptop: 1300px;
+$desktop: 1680px;
+$monitor: 1920px;
+
+@media screen and (max-width: $monitor) {
+  .header {
+    font-size: 11rem;
+  }
+
+  .compendium {
+    font-size: 12rem;
+  }
+
+  .search-header {
+    font-size: 9rem;
+  }
+  .element-card {
+    height: 48vh;
+    width: 30vw;
+  }
+  .element-card-header {
+    font-size: 2.5rem;
+  }
+  .common-locations,
+  .item-drops,
+  .description,
+  .attack-stat,
+  .defense-stat,
+  .cooking-effect,
+  .hearts-recovered {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: $desktop) {
+  .header {
+    font-size: 9.5rem;
+  }
+
+  .compendium {
+    font-size: 10rem;
+  }
+
+  .search-header {
+    font-size: 8rem;
+  }
+  .element-card {
+    height: 55vh;
+    width: 45vw;
+  }
+  .element-card-header {
+    font-size: 5rem;
+  }
+  .common-locations,
+  .item-drops,
+  .description,
+  .attack-stat,
+  .defense-stat,
+  .cooking-effect,
+  .hearts-recovered {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: $laptop) {
+  .header {
+    font-size: 7rem;
+  }
+
+  .compendium {
+    font-size: 8.5rem;
+  }
+
+  .search-header {
+    font-size: 7rem;
+  }
+  .element-card {
+    height: 50vh;
+    width: 45vw;
+  }
+  .element-card-header {
+    font-size: 4rem;
+  }
+  .common-locations,
+  .item-drops,
+  .description,
+  .attack-stat,
+  .defense-stat,
+  .cooking-effect,
+  .hearts-recovered {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .header {
+    font-size: 4.5rem;
+  }
+
+  .compendium {
+    font-size: 7rem;
+  }
+
+  .search-header {
+    font-size: 4.25rem;
+  }
+  .element-card {
+    height: 45vh;
+    width: 45vw;
+  }
+  .element-card-header {
+    font-size: 2rem;
+  }
+  .common-locations,
+  .item-drops,
+  .description,
+  .attack-stat,
+  .defense-stat,
+  .cooking-effect,
+  .hearts-recovered {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: $phone) {
+  .header {
+    font-size: 2.1rem;
+  }
+
+  .compendium {
+    font-size: 3.25rem;
+  }
+
+  .search-header {
+    font-size: 2.25rem;
+  }
+  .element-card {
+    height: 43vh;
+    width: 45vw;
+  }
+  .element-card-header {
+    font-size: 1.3rem;
+  }
+  .common-locations,
+  .item-drops,
+  .description,
+  .attack-stat,
+  .defense-stat,
+  .cooking-effect,
+  .hearts-recovered {
+    font-size: 0.75rem;
+  }
+}

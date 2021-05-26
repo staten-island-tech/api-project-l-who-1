@@ -40,7 +40,7 @@ const listen = function () {
                 </div>
                 <div class="description-box">
                 <p class="description">Description</p>
-                  <li class="description">${resData.description}</li>
+                  <li class="description">${resData.data.description}</li>
                 </div>
               </div>
             </div>`
