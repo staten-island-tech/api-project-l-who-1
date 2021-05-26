@@ -38,6 +38,22 @@ const listen = function () {
                 <p class="item-drops">Item Drops</p>
                   <p class="item-drops">${resData.data.drops}</p>
                 </div>
+                <div class="attack-box">
+               <p class="attack-stat">Attack</p>
+                 <p class="attack-stat">${resData.data.attack}</p>
+               </div>
+               <div class="defense-box">
+               <p class="defense-stat">Defense</p>
+                 <p class="defense-stat">${resData.data.defense}</p>
+              </div>
+                <div class="cooking-box">
+              <p class="cooking-effect">Cooking Effects</p>
+                <p class="cooking-effect">${resData.data.cooking_effect}</p>
+              </div>
+              <div class="heart-box">
+              <p class="hearts-recovered">Hearts Recovered</p>
+                <p class="hearts-recovered">${resData.data.hearts_recovered}</p>
+              </div>
                 <div class="description-box">
                 <p class="description">Description</p>
                   <li class="description">${resData.data.description}</li>
