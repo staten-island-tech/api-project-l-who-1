@@ -35,34 +35,34 @@ const listen = function () {
                 />
               </div>
               <div class="element-card-back">
-                <h3 class="element-card-header">${resData.data.name}</h3>
+                <h3 class="search-element-card-header">${resData.data.name}</h3>
                 <div class="location-box">
-                <p class="common-locations">Common Locations</p>
-                  <p class="common-locations">${resData.data.common_locations}</p>
+                <p class="search-common-locations">Common Locations</p>
+                  <p class="search-common-locations">${resData.data.common_locations}</p>
                 </div>
                 <div class="drops-box">
-                <p class="item-drops">Item Drops</p>
-                  <p class="item-drops">${resData.data.drops}</p>
+                <p class="search-item-drops">Item Drops</p>
+                  <p class="search-item-drops">${resData.data.drops}</p>
                 </div>
                 <div class="attack-box">
-               <p class="attack-stat">Attack</p>
-                 <p class="attack-stat">${resData.data.attack}</p>
+               <p class="search-attack-stat">Attack</p>
+                 <p class="search-attack-stat">${resData.data.attack}</p>
                </div>
                <div class="defense-box">
-               <p class="defense-stat">Defense</p>
-                 <p class="defense-stat">${resData.data.defense}</p>
+               <p class="search-defense-stat">Defense</p>
+                 <p class="search-defense-stat">${resData.data.defense}</p>
               </div>
                 <div class="cooking-box">
-              <p class="cooking-effect">Cooking Effects</p>
-                <p class="cooking-effect">${resData.data.cooking_effect}</p>
+              <p class="search-cooking-effect">Cooking Effects</p>
+                <p class="search-cooking-effect">${resData.data.cooking_effect}</p>
               </div>
               <div class="heart-box">
-              <p class="hearts-recovered">Hearts Recovered</p>
-                <p class="hearts-recovered">${resData.data.hearts_recovered}</p>
+              <p class="search-hearts-recovered">Hearts Recovered</p>
+                <p class="search-hearts-recovered">${resData.data.hearts_recovered}</p>
               </div>
                 <div class="description-box">
-                <p class="description">Description</p>
-                  <li class="description">${resData.data.description}</li>
+                <p class="search-description">Description</p>
+                  <li class="search-description">${resData.data.description}</li>
                 </div>
               </div>
             </div>`

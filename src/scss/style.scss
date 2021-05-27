@@ -78,7 +78,8 @@ body {
   height: 100%;
 }
 
-.element-card-header {
+.element-card-header,
+.search-element-card-header {
   text-transform: uppercase;
   text-decoration: underline;
   margin: 1rem auto;
@@ -92,7 +93,14 @@ body {
 .defense-box,
 .cooking-box,
 .heart-box,
-.description-box {
+.description-box,
+.search-location-box,
+.search-drops-box,
+.search-attack-box,
+.search-defense-box,
+.search-cooking-box,
+.search-heart-box,
+.search-description-box {
   text-align: center;
 }
 
