@@ -14,9 +14,9 @@ const listen = function () {
         let categoryArr = [];
         const addCategory = function () {
           categoryArr.push(resData.data.cooking_effect);
-          if ((resData.data.cooking_effect = null)) {
+          if (resData.data.cooking_effect == null) {
             resData.data.cooking_effect.display.object = hidden;
-          } else if ((resData.data.cooking_effect = undefined)) {
+          } else if (resData.data.cooking_effect == undefined) {
             resData.data.cooking_effect.display.object = hidden;
           } else {
             return categoryArr;
