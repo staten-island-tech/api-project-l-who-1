@@ -13,14 +13,8 @@ const listen = function () {
         const resData = await response.json();
         let categoryArr = [];
         const addCategory = function () {
-          categoryArr.push(resData.data.cooking_effect);
-          if (resData.data.cooking_effect == null) {
-            resData.data.cooking_effect.display.object = hidden;
-          } else if (resData.data.cooking_effect == undefined) {
-            resData.data.cooking_effect.display.object = hidden;
-          } else {
-            return categoryArr;
-          }
+          categoryArr.push(resData.data.name);
+          return categoryArr;
         };
         addCategory();
         console.log(categoryArr);
@@ -67,6 +61,31 @@ const listen = function () {
               </div>
             </div>`
         );
+        if ((resData.data.drops == null, undefined)) {
+          resData.data.drops.display.object = hidden;
+        } else {
+          console.log(resData.drops);
+        }
+        if ((resData.data.attack == null, undefined)) {
+          resData.data.attack.display.object = hidden;
+        } else {
+          console.log(resData.attack);
+        }
+        if ((resData.data.defense == null, undefined)) {
+          resData.data.defense.display.object = hidden;
+        } else {
+          console.log(resData.defense);
+        }
+        if ((resData.data.cooking_effect == null, undefined)) {
+          resData.data.cooking_effect.display.object = hidden;
+        } else {
+          console.log(resData.cooking_effect);
+        }
+        if ((resData.data.hearts_recovered == null, undefined)) {
+          resData.data.hearts_recovered.display.object = hidden;
+        } else {
+          console.log(resData.hearts_recovered);
+        }
         console.log(resData);
       } catch (error) {
         console.log(error);
