@@ -234,7 +234,6 @@ const query = async function () {
       </div>`
       );
     });
-    console.log(resData);
   } catch (error) {
     console.log(error);
     alert("Something went wrong");
