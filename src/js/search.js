@@ -13,14 +13,8 @@ const listen = function () {
         const resData = await response.json();
         let categoryArr = [];
         const addCategory = function () {
-          categoryArr.push(resData.data.cooking_effect);
-          if ((resData.data.cooking_effect = null)) {
-            resData.data.cooking_effect.display.object = hidden;
-          } else if ((resData.data.cooking_effect = undefined)) {
-            resData.data.cooking_effect.display.object = hidden;
-          } else {
-            return categoryArr;
-          }
+          categoryArr.push(resData.data.name);
+          return categoryArr;
         };
         addCategory();
         console.log(categoryArr);
