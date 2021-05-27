@@ -21,71 +21,46 @@ const listen = function () {
         DOMSelectors.grid.insertAdjacentHTML(
           "beforeend",
           `</div><div class="element-card">
-              <div class="element-card-front">
-                <img
-                  src="https://botw-compendium.herokuapp.com/api/v2/entry/${resData.data.id}/image"
-                  alt=""
-                  class="image"
-                />
-              </div>
-              <div class="element-card-back">
-                <h3 class="element-card-header">${resData.data.name}</h3>
-                <div class="location-box">
-                <p class="common-locations">Common Locations</p>
-                  <p class="common-locations">${resData.data.common_locations}</p>
+                <div class="element-card-front">
+                  <img
+                    src="https://botw-compendium.herokuapp.com/api/v2/entry/${resData.data.id}/image"
+                    alt=""
+                    class="image"
+                  />
                 </div>
-                <div class="drops-box">
-                <p class="item-drops">Item Drops</p>
-                  <p class="item-drops">${resData.data.drops}</p>
+                <div class="element-card-back">
+                  <h3 class="element-card-header">${resData.data.name}</h3>
+                  <div class="location-box">
+                  <p class="common-locations" id="location-title">Common Locations</p>
+                    <p class="common-locations" id="location-info">${resData.data.common_locations}</p>
+                  </div>
+                  <div class="drops-box">
+                  <p class="item-drops" id="item-title">Item Drops</p>
+                    <p class="item-drops" id="item-info">${resData.data.drops}</p>
+                  </div>
+                  <div class="attack-box">
+                 <p class="attack-stat" id="attack-title">Attack</p>
+                   <p class="attack-stat" id="attack-info">${resData.data.attack}</p>
+                 </div>
+                 <div class="defense-box">
+                 <p class="defense-stat" id="defense-title">Defense</p>
+                   <p class="defense-stat" id="defense-info">${resData.data.defense}</p>
                 </div>
-                <div class="attack-box">
-               <p class="attack-stat">Attack</p>
-                 <p class="attack-stat">${resData.data.attack}</p>
-               </div>
-               <div class="defense-box">
-               <p class="defense-stat">Defense</p>
-                 <p class="defense-stat">${resData.data.defense}</p>
-              </div>
-                <div class="cooking-box">
-              <p class="cooking-effect">Cooking Effects</p>
-                <p class="cooking-effect">${resData.data.cooking_effect}</p>
-              </div>
-              <div class="heart-box">
-              <p class="hearts-recovered">Hearts Recovered</p>
-                <p class="hearts-recovered">${resData.data.hearts_recovered}</p>
-              </div>
-                <div class="description-box">
-                <p class="description">Description</p>
-                  <li class="description">${resData.data.description}</li>
+                  <div class="cooking-box">
+                <p class="cooking-effect">Cooking Effects</p>
+                  <p class="cooking-effect">${resData.data.cooking_effect}</p>
                 </div>
-              </div>
-            </div>`
+                <div class="heart-box">
+                <p class="hearts-recovered">Hearts Recovered</p>
+                  <p class="hearts-recovered">${resData.data.hearts_recovered}</p>
+                </div>
+                  <div class="description-box">
+                  <p class="description">Description</p>
+                    <li class="description">${resData.data.description}</li>
+                  </div>
+                </div>
+              </div>`
         );
-        if ((resData.data.drops == null, undefined)) {
-          resData.data.drops.display.object = hidden;
-        } else {
-          console.log(resData.drops);
-        }
-        if ((resData.data.attack == null, undefined)) {
-          resData.data.attack.display.object = hidden;
-        } else {
-          console.log(resData.attack);
-        }
-        if ((resData.data.defense == null, undefined)) {
-          resData.data.defense.display.object = hidden;
-        } else {
-          console.log(resData.defense);
-        }
-        if ((resData.data.cooking_effect == null, undefined)) {
-          resData.data.cooking_effect.display.object = hidden;
-        } else {
-          console.log(resData.cooking_effect);
-        }
-        if ((resData.data.hearts_recovered == null, undefined)) {
-          resData.data.hearts_recovered.display.object = hidden;
-        } else {
-          console.log(resData.hearts_recovered);
-        }
         console.log(resData);
       } catch (error) {
         console.log(error);
